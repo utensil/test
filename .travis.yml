@@ -1,0 +1,27 @@
+branches:
+  except:
+    - gh-pages
+
+language: cpp
+
+compiler:
+  - gcc
+
+before_deploy:
+  - echo test > a.txt
+  
+deploy:
+  provider: releases
+  api-key:
+    secure: "encrypted token"
+  file: "a.txt"
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+    
+install:
+  - "echo install"
+
+script:
+  - "echo script"
