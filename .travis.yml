@@ -13,7 +13,7 @@ before_deploy:
 deploy:
   provider: releases
   api-key:
-    secure: "encrypted token"
+    secure: "ZRv48EPB9lI2Iugzi8H0CcDEmEEXzAWMBBh6LZNPfTsDVQQdr8/1NgUvCOqA5a7uEIQv38H2UwgQSpGKiwEBJ5eP4VugOUK90G4HoteaadTe/ARTCIgPjpfYF0UT5M5ijkoxLIZeytYyI5yuBvy21gc6FG6oXdWbExmlbjNMXeQ="
   file: "a.txt"
   skip_cleanup: true
   on:
